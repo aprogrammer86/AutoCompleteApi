@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="search d-flex flex-column align-items-center justify-content-center" onkeydown="HandleKeyPress(this)" oninput="HandleInput(this)">
+
+    <div id="resultPlace" class="d-flex justify-content-around align-items-center text-dark rounded-pill bg-white">
+        <div class="p-3">
+            Results:
+        </div>
+        <div id="resultNumber" class="p-3">
+            0000
+        </div>
+    </div>
+    <br />
+    <div id="searchSection" class="d-flex flex-column align-items-start">
+        <form autocomplete="off">
+            <div class="autocomplete">
+                <input id="inputText" type="text" class="form-control form-rounded">
+            </div>
+        </form>
+    </div>
+</div>
